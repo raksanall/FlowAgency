@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+}
+@font-face {
+    font-family:poppins ;
+    src: url(./Poppins/Poppins-Light.ttf);
+   
+   
+}
+@font-face {
+    font-family: poppinsbold;
+    src: url(./Poppins/Poppins-SemiBold.ttf);
+}
+.navlink{box-sizing: border-box;
+    text-decoration: none !important;
+  font-size: 20px;
+  color: rgba(213, 200, 200, 0.666);
+}
+.active{ color: white;
+    box-sizing: border-box;
+}
+.row{
+    display: flex !important;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
