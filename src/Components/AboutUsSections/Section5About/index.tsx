@@ -5,7 +5,6 @@ import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import QuizIcon from '@mui/icons-material/Quiz';
 
 const Section5About = () => {
-  // test
   return (
     <div className='container'>
         <div className={styles.Section5}>
