@@ -36,6 +36,9 @@ font-family: poppinsbold;}
     display: block;
    
 }
+.PriceCard a{
+    text-decoration: none;
+}
 .lorem{
     margin-bottom: 40px;
 }
