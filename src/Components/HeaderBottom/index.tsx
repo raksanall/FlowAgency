@@ -8,7 +8,8 @@ import { Link } from "react-router-dom"
 const HeaderBottom = ({ptitle,h2title,src}:titleType,) => {
   return (
     <div className={styles.HeaderBottom}>
-      <div className="container"> <div className={styles.rowHeader}>
+      <div className="container"> 
+      <div className={styles.rowHeader}>
       <div className={styles.column}> 
       <h2>{h2title}</h2>
       <p>{ptitle}</p>

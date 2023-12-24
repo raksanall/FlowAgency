@@ -39,7 +39,10 @@ font-weight: 700;
    @media screen and (min-width:993px) and (max-width:1200px){
    }
    @media screen and (max-width:1200px){
-      
+    .HeaderBottom{
+      height: fit-content;
+      padding: 70px 0;
+    }
              .image{
               display: none;
              }
@@ -57,7 +60,7 @@ font-weight: 700;
            
    }
    @media screen and (max-width:993px) and (min-width:768px) {
-      
+     
              p{
               font-size: 13px;
              }
