@@ -2,7 +2,7 @@ import styles from "./style.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "./style.css"
 
 const Section4 = () => {
@@ -12,9 +12,20 @@ const Section4 = () => {
 <div className={styles.Row}>
 <div className={styles.column1}><h3 >What our clients say about us</h3><p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p></div>
 <div className={styles.column2}>
-
-<Swiper navigation={true} modules={[Navigation]} className={styles.mySwiper}>
-        <SwiperSlide  className={styles.SwiperSlide}><h5>"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h5>
+<Swiper 
+  spaceBetween={30}
+  centeredSlides={true}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  navigation={true} 
+  modules={[Autoplay, Pagination, Navigation]}
+   className={styles.mySwiper} >
+        <SwiperSlide className={styles.SwiperSlide}><h5>"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h5>
         <div className={styles.rowSlider}><img src="woman.png" alt="" /> <div className="column"><h6 className={styles.columns}>Jenny Wilson</h6><h6 className={styles.columns2}>Vice President</h6></div></div>
         </SwiperSlide>
         <SwiperSlide  className={styles.SwiperSlide}><h5>""Exceptional agency! Their deep understanding of our product has led to successful collaborations. They consistently bring innovative features to the table, maintaining an impressive level of focus.""</h5>
@@ -35,10 +46,7 @@ const Section4 = () => {
         <SwiperSlide  className={styles.SwiperSlide}><h5>"Outstanding agency! Their grasp of our product is unparalleled, and their ability to introduce impactful features showcases their unwavering focus. Truly a pleasure to work with."</h5>
         <div className={styles.rowSlider}><img style={{width:50}} src="woman3.png" alt="" /> <div className="column"><h6 className={styles.columns}>Harriz Clark</h6><h6 className={styles.columns2}>Vice President</h6></div></div>
         </SwiperSlide>
-
-        
       </Swiper>
-
 </div>
 </div>
 

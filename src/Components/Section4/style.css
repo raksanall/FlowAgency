@@ -1,59 +1,19 @@
 .swiper-button-prev{
-   justify-content: end;
-   left: 560px;
+   right: 45px;
+   left: initial;
 }
+.swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 30px;
+}
+.swiper-button-next{
+    right: 10px;
+    left: initial;
+ }
 .swiper-button-prev, .swiper-button-next{
+    font-size: 10px;
+    bottom:15px;
+    top:initial;
     margin-top: 0;
+    size: 10px;
 }
-@media screen and  (max-width:1200px){
    
- }
- @media screen and (max-width:1200px){
-    
-    .swiper-button-prev{
-        justify-content: end;
-        left: 460px;
-     }
-         
- }
- @media screen and (max-width:993px)  {
-    .swiper-button-prev{
-        justify-content: end;
-        left: 600px;
-     }
- }
- @media screen and (max-width:768px){
-    .swiper-button-prev{
-        justify-content: end;
-        left: 420px;
-     }
- }
- 
-  @media screen and (max-width:570px){
-    .swiper-button-prev{
-        justify-content: end;
-        left: 410px;
-    
-     }
- }
- @media screen and (max-width:520px){
-    .swiper-button-prev{
-        justify-content: end;
-        left: 380px;
-       
-     }
- }
- @media screen and (max-width:500px){
-    .swiper-button-prev{
-        justify-content: end;
-        left: 340px;
-      
-     }
- }
- @media screen and (max-width:430px){
-    .swiper-button-prev{
-        justify-content: end;
-        left: 270px;
-      
-     }
- }    
