@@ -37,7 +37,7 @@ const Work = () => {
 
             <div onClick={() => setSelectedCategory('all')}
               style={{ color: selectedCategory === 'all' ? '#2405F2' : 'black' }} > All </div>
-               <div onClick={() => setSelectedCategory('Webflow Design')}
+            <div onClick={() => setSelectedCategory('Webflow Design')}
               style={{ color: selectedCategory === 'Webflow Design' ? '#2405F2' : 'black' }}   >  Webflow Design</div>
             <div onClick={() => setSelectedCategory('UI Design')}
               style={{ color: selectedCategory === 'UI Design' ? '#2405F2' : 'black' }}  >  UI Design</div>
@@ -45,9 +45,6 @@ const Work = () => {
               style={{ color: selectedCategory === 'Figma Design' ? '#2405F2' : 'black' }} >   Figma Design </div>
           </div>
           <div className={styles.Section2}>
-
-
-
             {filteredTemplates.map(({ id, title, description, img }) => (
               <Template key={id} id={id} img={img} title={title} description={description} />
             ))}
@@ -58,8 +55,8 @@ const Work = () => {
       <div className="container"><div className={styles.Section3}>
         <h2>Let's build something great together</h2>
         <p>Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.</p>
-        
-        </div></div>
+
+      </div></div>
 
 
     </div>

@@ -8,7 +8,7 @@ const Section2 = () => {
       <div className="container">
         <div className={styles.row}>
             <h2>View our projects</h2>
-<ViewArrow title="View More" border="none" bg="transparent"/>
+            <Link to="/Work"><ViewArrow title="View More" border="none" bg="transparent"/></Link>
         </div>
         <div className={styles.mainRow}>
 
