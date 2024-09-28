@@ -1,6 +1,8 @@
 .Section4 p{
-    color: black;
     width: 80%;
+    text-align: start;
+    color: black;
+   
    
 }
 .Section4{box-sizing: border-box;
@@ -14,7 +16,9 @@
     flex-direction: row !important;
     align-items: center;justify-content: center;
 }
-.Section4 h3{width: 80%;
+.Section4 h3{
+    width: 80%;
+    text-align: start;
     font-size: 39px;
     margin-bottom: 20px;
 }
@@ -26,6 +30,7 @@
 }
 .mySwiper{margin: 0;padding: 0;
     width: 100%;
+    
 
 
 
@@ -56,10 +61,12 @@
     flex-direction: column;
 }
 .column1{
+    padding-right: 40px;
     width: 40%;
     height: 100%;
   
 }
+
 .column2{
     width: 60%;
     height: 100%;
@@ -79,13 +86,27 @@
   .Row{
     flex-direction: column !important;
   }
-  .column1{
-    width: 100%;
+  .Section4 h3{
+    text-align: center !important;
+    width: 80% !important;
+    margin: 0 auto;
 }
-.column1 h3{
-    text-align: center;
+.mySwiper{
+  padding: 0 30px !important;
 
 }
+.Section4 p{
+    text-align: center !important;
+    width: 80% !important;
+    margin: 0 auto;
+}
+.column1{
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+
 .column2{margin-top: 60px;
     width: 100%;
   

@@ -65,11 +65,7 @@ font-weight: 500;
         .column{align-items: center;
         text-align: center;}
 }
-@media screen and (max-width:1200px){
-   
-       
-        
-}
+
 @media screen and (max-width:993px) and (min-width:768px) {
    
 }

@@ -26,7 +26,7 @@ const ContactUs = ({}) => {
           <input placeholder="Select subject" type="text" />
         </div>
           </div>
-          <div className="column">
+          <div className={styles.messageColumn}>
               <h3>Message</h3>
           <textarea name="" id="" placeholder="Write your  question here"></textarea>
           </div>

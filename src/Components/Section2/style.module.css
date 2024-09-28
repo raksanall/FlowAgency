@@ -1,6 +1,7 @@
 .Section2{
     width: 100vw;
-box-sizing: border-box;}
+box-sizing: border-box;
+padding-bottom: 50px;}
 .Section2 button{color: black;
 font-size: 20px !important;
 }
@@ -122,6 +123,9 @@ font-style: normal;
 font-weight: 600;
 line-height: 36px; 
      }
+
+
+
      @media screen and (max-width:1200px){
         .Absolute2, .Absolute3, .Absolute{
            background: transparent;
@@ -130,9 +134,9 @@ line-height: 36px;
           
         
         }
+        
         .column{
-            gap: 20px;
-            padding-bottom: 30px;
+           display: none;
         }
         .Absolute2 *, .Absolute3 *, .Absolute *{
             color: #000 !important;
@@ -143,7 +147,7 @@ line-height: 36px;
         }
         .Absolute p{
             display: none;
-            /* //test1 */
+            
         }
         .mainRow a{
             text-decoration: none;

@@ -1,3 +1,4 @@
+
 import styles from "./style.module.css"
 
 const Section4About = () => {
@@ -16,7 +17,7 @@ const Section4About = () => {
     <div className={styles.image}><img src="/photo-of-women-at-the-meeting-3810789.png" alt="" /></div>
       <div className={styles.column}>
 <h6>Our Vision</h6>
-<h2>Laser focus</h2>
+<h2 >Laser focus</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
       </div>

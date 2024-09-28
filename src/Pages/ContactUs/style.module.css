@@ -1,70 +1,116 @@
-.ContactUs{
+.ContactUs {
     padding: 75px 0;
 }
-.ContactUs h2{
+
+.ContactUs h2 {
+    width: 100%;
     padding-bottom: 10px;
     color: var(--Dark-blue, #282938);
-text-align: center;
-font-family: Poppinsbold;
-font-size: 44px;
-}
-.ContactUs p{
-text-align: center;
-margin: 0 auto;
-width: 45%;
+    text-align: center;
+    font-family: Poppinsbold;
+    font-size: 44px;
 }
 
-.ContactUs form{
+.ContactUs p {
+    text-align: center;
+    margin: 0 auto;
+    width: 45%;
+}
 
+.ContactUs form {
+    object-fit: contain;
+    width: fit-content;
     gap: 20px;
     padding: 40px 0;
     display: flex;
     border-radius: 12px;
     flex-direction: column;
     background-color: #F4F6FC;
-    width: 1000px;
+    width: 80%;
     align-items: center;
     margin: 40px auto;
 }
-.ContactUs form input{
-    width: 400px;
+
+.ContactUs form input {
+    width: 100%;
     height: 50px;
     background-color: transparent;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.12);
-   
+
 }
-.inputRows{
+
+.column {
+    width: 100%;
+}
+
+.inputRows {
+    padding: 15px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    justify-content: center;
 }
-.inputRows div{
+
+.messageColumn {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.inputRows div {
     gap: 10px;
+    width: 45%;
 }
-.ContactUs textarea{margin-top: 10px;
+
+.ContactUs textarea {
+    margin-top: 10px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     background-color: transparent;
-    width: 830px;
+    width: 100%;
     border-radius: 8px;
     height: 130px;
 }
-.ContactUs form button{
+
+.ContactUs form button {
     display: flex;
-width: 254px;
-height: 58px;
-font-size: 15px;
-padding: 15px 51px;
-justify-content: center;
-align-items: center;
-border-radius: 41px;
-color: white;
-background-color: #1C1E53;
+    width: 254px;
+    height: 58px;
+    font-size: 15px;
+    padding: 15px 51px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 41px;
+    color: white;
+    background-color: #1C1E53;
 }
-.ContactUs form *::placeholder{
+
+.ContactUs form *::placeholder {
     padding-left: 20px;
 }
-.ContactUs textarea::placeholder{
+
+.ContactUs textarea::placeholder {
     padding-top: 12px;
 }
 
+@media screen and (max-width:768px) {
+    .inputRows {
+        flex-direction: column;
+    }
+    .inputRows div{
+      
+        width: 100%;
+    }
+    .ContactUs h2 {
+        font-size: 35px;
+    }
+   
+}
+
+@media screen and (max-width:960px) {
+    .ContactUs p {
+        width: 70%;
+     }
+}

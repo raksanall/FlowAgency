@@ -1,10 +1,12 @@
 .Footer{
     height: 350px;
-    width: 100vw;
+    width: 100%;
+    
     background-color: #1C1E53;
-
+    box-sizing: border-box;
 }
 .MainRow{ align-items: end;
+    width: 100%;
     height: 350px;
     gap: 120px;
     display: flex;
@@ -12,7 +14,6 @@
     justify-content: center;}
 .RightColumn svg{
     cursor: pointer;
-    width: 20px;
     color: white;
     height: 20px;
   
@@ -21,7 +22,6 @@
     gap: 20px;
 }
 .RightColumn p{
-    width: 70%;
     opacity: 0.8;
    color: #F4F6FC;
 }
@@ -31,12 +31,13 @@
     display: flex;
     flex-direction: column;
 }
-.LeftColumn .ContactRows{display: flex;
-    width: 420px;
+.LeftColumn .ContactRows{
+   
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 20px 40px;
+    gap: 20px;
+    padding: 10px 40px;
     flex-direction: row;
     background-color: #FCD980;
 }
@@ -44,7 +45,14 @@
     gap: 15px;
     flex-direction: column;
 }
+.LeftColumn p{
+    color: white;
+}
+.LeftColumn a{
+   width: 100% !important;
+}
 .ContactRows{
+    font-size: 15px;
     margin-top: 55px;
 }
 .RightColumn h3{
@@ -55,3 +63,43 @@ font-style: normal;
 font-weight: 600;
 line-height: 64px; 
 }
+@media screen and  (max-width:1200px){
+    .RightColumn h3{      
+    font-size: 30px;
+    line-height: 64px; 
+    }
+    .LeftColumn .ContactRows{
+        gap: 20px;
+        font-size: 12px;
+        padding: 0 10px;
+        align-items:initial ;
+
+    }
+}
+
+@media screen and (max-width:993px) {
+    .RightColumn{
+        display: none;
+     }
+     .LeftColumn .ContactRows{
+         
+         font-size: 17px;
+         display: flex;
+         align-items: space-between;
+      }
+      .MainRow{
+         align-items: center;
+       }
+   
+}
+
+
+ @media screen and (max-width:570px){
+   
+    .LeftColumn .ContactRows{      
+        gap: 20px;
+        width: 90%;
+        padding: 0 10px;
+        margin: 50px auto 0px auto;
+    }
+            }

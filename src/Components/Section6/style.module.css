@@ -26,7 +26,9 @@
    background-size: cover;
    background-image: url(/woman-writing-on-paper-3228878.png);
 }
-.RightDiv{gap: 25px;
+.RightDiv{
+    
+    gap: 25px;
     align-items: center;
     justify-content: center;
     background-color: #1C1E53;
@@ -43,10 +45,12 @@
 }
 .RightDiv form{gap: 23px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
-.RightDiv form input{border: 1.5px solid rgba(255, 255, 255, 0.05);
-    width: 400px;
+.RightDiv form input{
+    border: 1.5px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
     padding: 16px;
     background-color: transparent;
     border-radius: 8px;
@@ -64,6 +68,7 @@ line-height: 48px;
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
+text-align: center;
 font-weight: 500;
 line-height: 28px; /* 175% */
 }
@@ -72,20 +77,21 @@ line-height: 28px; /* 175% */
 background: #FCD980;
 font-size: 18px;
 display: flex;
-width: 410px;
+width: 90%;
 height: 60px;
 margin-top: 10px;
 padding: 15px 51px;
 justify-content: center;
 align-items: center;
 gap: 10px;
-flex-shrink: 0;
 }
 @media screen and  (max-width:1200px){
    
 }
 @media screen and (max-width:1200px){
-   
+    .RightDiv form input{
+       margin: 0 30px;
+    }
  
     .LeftDiv{
        display: none;
@@ -94,8 +100,12 @@ flex-shrink: 0;
         justify-content: center;
       }  
       .RightDiv{
+        width: 100%;
+      }
+      .RightDiv button{
         width: 80%;
       }
+      
 }
 @media screen and (max-width:1000px)  {
 

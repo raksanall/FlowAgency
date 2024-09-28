@@ -16,3 +16,17 @@ line-height: 28px;
 .FooterBottom div a:last-child{
    display: none;
 }
+@media screen and  (max-width:1200px){
+  
+}
+
+@media screen and (max-width:768px) {
+  
+   .FooterBottom{
+flex-direction: column;
+    } 
+}
+@media screen and (max-width:570px)
+{     
+  
+}
