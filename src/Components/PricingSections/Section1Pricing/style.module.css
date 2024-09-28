@@ -22,5 +22,17 @@
 .Section1 .h2name{
     font-family: poppinsbold;
     font-size: 40px;
-    margin: 40px 0 0 0;
+    width: 25%;
+    margin: 40px auto 10px auto;
 }
+@media screen and (max-width:1200px){
+    .Section1 .h2name{
+        width: 34%;
+    }
+}
+
+ @media screen and (max-width:768px){
+    .Section1 .h2name{
+        width: 56%;
+    }
+            }
