@@ -13,7 +13,8 @@ const Navigation = () => {
               to={path} key={id}>
 {title}
             </NavLink>
-            )};
+            )
+          };
             })}
             
   

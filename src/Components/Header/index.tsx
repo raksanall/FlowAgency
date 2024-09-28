@@ -31,13 +31,14 @@ const Header = () => {
         <div className={isMenuOpen ? `${styles.burgerMenu} ${styles.show}` : styles.burgerMenu}>
        
       {routes.map(({id,path,title})=>{
+         if (title !== "") {
         return(
             <NavLink className={({isActive})=>isActive ? `${styles.navlink && styles.active}`: `${styles.navlink }`} 
             to={path}
             key={id}>
 {title}
             </NavLink>
-            );
+            )};
             })}
             
   
