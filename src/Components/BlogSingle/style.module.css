@@ -20,8 +20,7 @@
 }
 .SingleBlog .BlogImage{
     object-fit: cover cover;
-    width: 600px;
-    height: 400px;
+    width: 60%;
  
 
 }
@@ -52,4 +51,13 @@ font-style: normal;
 font-weight: 600;
 line-height: 56px; 
 
+}
+
+@media screen and (max-width:960px){
+    .SingleBlog .BlogImage{
+        object-fit: cover cover;
+        width: 80%;
+     
+    
+    }
 }
